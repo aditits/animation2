@@ -1,10 +1,22 @@
+/* Common Styles */
 *
 {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-body
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+/* End of Common styles */
+
+/* Home page Styles */
+
+.container
 {
 	min-height: 1500vh;
 	position: relative;
@@ -25,6 +37,11 @@ body
 	height: 100%;
 	object-fit: cover;
 }
+
+.header {
+	position: fixed;
+	top: 50%;
+}	
 .heading-text{
 	position: absolute;
 	width: 100%;
@@ -32,3 +49,18 @@ body
 	z-index: 200;
 	margin: auto;
 }
+
+.heading {
+	font-size: 8rem;
+	color: var(--white-color);
+}
+  
+.header-paragraph {
+	font-size: 3rem;
+	font-weight: 500;
+	color: var(--secondary-color);
+	max-width: 70rem;
+	margin: auto;
+}
+
+/* End of Home page Styles */
